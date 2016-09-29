@@ -1,0 +1,31 @@
+
+{% block content %}
+
+
+    <form action =" {%  url 'enter:auth_view' %} " method="POST">
+            {% csrf_token %}
+
+
+            <table border="0">
+                <tr>
+                    <td>
+                     Enter Your Username
+                    </td>
+                    <td>
+                        <input type="text" name="name" value="" id="name"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Enter your Password
+                    </td>
+                    <td>
+                        <input type="password" name="password" value="" id="password"/>
+                    </td>
+                </tr>
+            </table>
+
+            <input type="submit" value="Login" />
+    </form>
+
+{% endblock %}

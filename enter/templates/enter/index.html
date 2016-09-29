@@ -1,0 +1,31 @@
+<form action =" {%  url 'enter:cost' %} " method="post">
+
+            {% csrf_token %}
+            <table border="0">
+                <tr>
+                    <td>
+                        Name
+                    </td>
+                    <td>
+                        <input type="text" name="name" value="" id="name"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Email
+                    </td>
+                    <td>
+                        <input type="text" name="password" value="" id="password"/>
+                    </td>
+                </tr>
+            <tr>
+                    <td>
+                        Password
+                    </td>
+                    <td>
+                        <input type="text" name="email" value="" id="email"/>
+                    </td>
+                </tr></table>
+
+            <input type="submit" value="Register" />
+        </form>

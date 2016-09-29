@@ -1,0 +1,9 @@
+
+
+    <form action =" {%  url 'enter:loggedin' %} " method="post">
+
+
+        {% csrf_token %}
+            <h2>Hii {{uname}} you are logged in</h2>
+                <p>Click <a href="enter/logout.html">here</a>to logout</p>
+    </form>
